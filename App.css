@@ -1,0 +1,13 @@
+.shorts-feed {
+  height: 100vh; /* Занимает всю высоту экрана */
+  overflow-y: scroll; /* Включает вертикальную прокрутку */
+  scroll-snap-type: y mandatory; /* Привязывает прокрутку к отдельным карточкам */
+  background: #000; /* Черный фон, как в Shorts */
+  /* Скрываем полосу прокрутки для лучшего UX (опционально) */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.shorts-feed::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
